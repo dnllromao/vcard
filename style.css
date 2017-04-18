@@ -81,12 +81,10 @@ body:before {
 
 			.contact {
 				top: -20px;
-				/*padding: 10px 12px;*/
 			}
 
 			.about {
 				bottom: -20px;
-				/*padding: 10px 12px;*/
 			}
 
 	.vcard-content {
@@ -122,6 +120,7 @@ body:before {
 				height: 100%;
 				display: inline-block;
 				vertical-align: middle;
+
 			}
 
 		.vcard-social {
@@ -145,3 +144,19 @@ body:before {
 		 		box-sizing: border-box;
 		 		font-size: 1.3em;
 		 	}
+
+@media (max-width: 500px) {
+
+	body:before {
+
+	}
+	
+	.vcard {
+		width: 100%;
+		height: auto;
+	}
+
+	.vcard-content {
+		flex-direction: column;
+	}
+}
