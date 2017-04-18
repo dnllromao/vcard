@@ -26,6 +26,7 @@ body:before {
 	height: 250px;
 	background-color: #eee;
 	padding: 1em;
+	box-sizing: border-box;
 	position: relative;
 	box-shadow: 0px 5px 8px #888888;
 }
@@ -148,15 +149,28 @@ body:before {
 @media (max-width: 500px) {
 
 	body:before {
-
+		display: none;
 	}
-	
+
 	.vcard {
 		width: 100%;
 		height: auto;
+		margin-top: 150px;
 	}
 
-	.vcard-content {
-		flex-direction: column;
-	}
+		.vcard-nav {
+			top: -130px;
+			right: 50%;
+			transform: translateX(50%);
+		}
+
+		.vcard-content {
+			flex-direction: column;
+			margin-top: 80px;
+		}
+
+			.vcard-info,
+			.v-card-social {
+				width: 100%;
+			}
 }
