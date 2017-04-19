@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	/*padding: 0;*/
+	position: relative;
 	font-size: 15px;
 	background-color: #ddd;
 }
@@ -8,16 +8,15 @@ body {
 html,
 body {
 	height: 100%;
-	text-align: center
+	text-align: center;
 }
 
-body:before {
+body.page-vcard:before {
 	content: '';
 	display: inline-block;
 	height: 100%; 
 	vertical-align: middle;
 }
-
 
 .vcard {
 	display: inline-block;
@@ -174,3 +173,110 @@ body:before {
 				width: 100%;
 			}
 }
+
+body.page-404 {
+	background: url(http://i.imgur.com/4CBuRdq.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* why can't insert cover in the background statement ? */
+}
+
+	.title {
+		color: #FFEB3B;
+		color: #00BCD4;
+		margin: 0;
+		padding-top: 50px;
+		text-transform: full-width;
+		padding-top: 16vh;
+	}
+
+		.title span {
+			display: block;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+	.container {
+		width: 100%;
+		height: 62%;
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.ad {
+		
+	}
+
+		.ad .sign-wrap {
+			width: 150px;
+			height: auto;
+			margin: 0 auto;
+			transform: translateX(150px);
+			position: relative;
+		}
+
+			.ad img {
+				width: 100%;
+			}
+
+			.ad .sign-wrap p {
+				position: absolute;
+				top: 7px;
+				left: 14px;
+				color: #fff;
+			}
+
+			
+
+	.back {
+		
+	}
+
+		.back .sign-wrap {
+			height: 250px;
+			width: 250px;
+			margin-left: 3em;
+			position: relative;
+		}
+
+			.back img {
+				width: 100%;
+			}
+
+			.back .sign-wrap p {
+				position: absolute;
+				top: 12px;
+				left: 50%;
+				transform: translateX(-65%);
+				color: #fff;
+			}
+
+
+
+
+
+		.bg-img {
+			height: 250px;
+			width: 250px;
+			/*background: url(https://www.shareicon.net/data/2016/09/15/829304_sign_512x512.png) no-repeat top left fixed;*/
+			/* Can't undertand why fixed blom everything */
+			background: url(https://www.shareicon.net/data/2016/09/15/829304_sign_512x512.png) no-repeat top left; 
+			background-size: contain;
+		}
+
+			.bg-img > p {
+				position: relative;
+				top: 26px;
+			}
+
+		/*.back img {
+			max-width: 250px;
+		}*/
+
+
+	
